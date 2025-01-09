@@ -6,21 +6,34 @@
     <title>Document</title>
     <style>
         *{margin: 0; padding: 0; box-sizing: border-box;}
-        #aa{background-color: rgb(44, 27, 27);
+        #app{margin: 0 auto;
             width: 402px;
             height: 70px;
-            color: white;
-            text-align: center;}
+            }
+        
+        #app>#content{background-color: rgb(44, 27, 27);
+                height: 60px;
+                padding-top: 10px;
+                font-size: 10pt;
+                color: white;
+                text-align: center;}
+        #app>#content2{background-color: rgb(201, 140, 97);
+                padding: 8px;
+                color: white;}
     </style>
 </head>
 <body>
+    <div id="app">
     <div>
-        <img src="로고" alt="">
+        <img src="logo.png" alt="" style="width: 80px;
+                                          margin: 12px 150px;">
+        <img src="메뉴버튼.svg" alt="" style="float: right; top: 20px;">
+        <img src="언어변경버튼.svg" alt="">
     </div>
-    <div id="aa">
+    <div id="content">
         <h1>브랜드 소개</h1>
     </div>
-    <div>
+    <div id="content2">
         <h4>푸라닭 소개</h4>
     </div>
     <div>
@@ -39,5 +52,6 @@
         <p>대표번호 : 0000-0000</p>
         <p>창업문의 1111-1111</p>
     </div>
+</div>
 </body>
 </html>
