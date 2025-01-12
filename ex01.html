@@ -1,57 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{margin: 0; padding: 0; box-sizing: border-box;}
-        #app{margin: 0 auto;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #app {
+            background-color: white;
+            margin: 0 auto;
             width: 402px;
-            height: 70px;
-            }
-        
-        #app>#content{background-color: rgb(44, 27, 27);
-                height: 60px;
-                padding-top: 10px;
-                font-size: 10pt;
-                color: white;
-                text-align: center;}
-        #app>#content2{background-color: rgb(201, 140, 97);
-                padding: 8px;
-                color: white;}
+            height: 1516px;
+        }
+
+        #app>#content {
+            background-color: rgb(44, 27, 27);
+            height: 80px;
+            padding-top: 20px;
+            margin-top: 5px;
+            font-size: 12pt;
+            color: white;
+            text-align: center;
+        }
+
+        #app>#content2 {
+            background-color: rgb(201, 140, 97);
+            padding: 8px;
+            color: white;
+        }
+
+        #app>#aa>img{
+            width: 310px;
+            margin: 10px 50px;
+        }
+        #app>#aa>p{
+            font-size: 15px;
+            text-align: center;
+        }
+        #app>#bb>h3{
+            margin-top: 15px;
+        }
+        #app>#bb>p{
+            padding: 10px;
+            font-size: 13px;
+        }
+        #app>#cc{
+            background-color: darkgray;
+            height: 150px;
+            position: relative;
+        }
+        #app>#cc>#dd,#ff{
+            color: chocolate;
+            font-size: 25px;
+        }
+        #app>#cc>#dd{
+            position: absolute;
+            top: 15px;
+            left: 60px;
+        }
+        #app>#cc>#ff{
+            position: absolute;
+            top: 85px;
+            left: 60px;
+        }
+        #app>#cc>#ee,#gg{
+            font-size: 25px;
+        }
+        #app>#cc>#ee{
+            position: absolute;
+            top: 15px;
+            left: 190px;
+        }
+        #app>#cc>#gg{
+            position: absolute;
+            top: 85px;
+            left: 190px;
+        }
+        #app>#cc>#hh,#ii{
+            background-color: chocolate;
+            border: 0;
+            width: 75px;
+            height: 25px;
+            cursor: pointer;
+        }
+        #app>#cc>#hh{
+            position: absolute;
+            top: 55px;
+            left: 150px;
+            text-align: center;
+        }
+        #app>#cc>#ii{
+            position: absolute;
+            top: 125px;
+            left: 150px;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <div id="app">
-    <div>
-        <img src="logo.png" alt="" style="width: 80px;
-                                          margin: 12px 150px;">
-        <img src="메뉴버튼.svg" alt="" style="float: right; top: 20px;">
-        <img src="언어변경버튼.svg" alt="">
+        <img src="images/logo.png" alt="" style="width: 120px;
+                                              margin: 5px 100px;">
+        <img src="images/메뉴버튼.svg" alt="" style="float: right;
+                                                  margin-top: 13px;">
+        <img src="images/언어변경버튼.svg" alt="" style="float: left;
+                                                      margin-top: 13px;">
+        <div id="content">
+            <h1>브랜드 소개</h1>
+        </div>
+        <div id="content2">
+            <h4>푸라닭 소개</h4>
+        </div>
+        <div>
+            <img src="images/image2.svg" alt="" style="width: 402px;">
+        </div>
+        <div>
+            <h1 style="margin: 20px;
+                           font-size: 23px;
+                           text-align: center;">푸라닭 치킨의 차별화 포인트</h1>
+        </div>
+        <div id="aa">
+            <img src="images/image3.png" alt="">
+            <p>치킨의 고급화</p>
+            <img src="images/image4.png" alt="">
+            <p>치킨의 요리화</p>
+            <img src="images/image5.png" alt="">
+            <p>치킨의 시각화</p>
+        </div>
+        <div id="bb">
+            <h3>"치킨, 요리가 되다"</h3>
+            <p>굽고 튀기는 독보적 오븐-후라이드 조리법을 기반으로<br/>
+            차별화된 특제 소스와 토핑을 더해 요리와 같은 맛과 비주얼의<br/>
+             치킨을 만듭니다.</p>
+            <h3>"가치 있는 시간을 선물 합니다."</h3>
+            <p>특별한 맛, 특별한 비주얼을 지닌 푸라닭의 치킨 요리는<br/> 
+                소중한 사람들과의 시간을 더욱 가치 있게 만들어 줍니다.</p>
+            <img src="images/image1.png" alt="" style="width: 402px;
+                                                        margin: 5px 0;">
+        </div>
+        <div id="cc">
+            <p id="dd">대표번호</p>
+            <p id="ee">0000-0000</p>
+            <p id="hh">문의하기</p>
+            <p id="ff">창업문의</p>
+            <p id="gg">1111-1111</p>
+            <p id="ii">문의하기</p>
+        </div>
     </div>
-    <div id="content">
-        <h1>브랜드 소개</h1>
-    </div>
-    <div id="content2">
-        <h4>푸라닭 소개</h4>
-    </div>
-    <div>
-        <img src="" alt="">
-        <p>푸라닭 치킨의 차별화 포인트</p>
-    </div>
-    <div>
-        <img src="" alt="">
-        <p>치킨의 고급화</p>
-        <img src="" alt="">
-        <p>치킨의 요리화</p>
-        <img src="" alt="">
-        <p>치킨의 시각화</p>
-    </div>
-    <div>
-        <p>대표번호 : 0000-0000</p>
-        <p>창업문의 1111-1111</p>
-    </div>
-</div>
 </body>
+
 </html>

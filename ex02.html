@@ -5,57 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-          margin: 0;
-          padding: 0;
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        #app{
+            background-color: white;
+            margin: 0 auto;
+            width: 402px;
+            height: 1516px;
         }
-        #container {
-          margin: 0 auto;
-          padding: 20px;
+        #app>#aa{
+            background-color: rgb(44, 27, 27);
+            height: 80px;
+            padding-top: 20px;
+            margin-top: 5px;
+            font-size: 12pt;
+            color: white;
+            text-align: center;
         }
-    
-        #container > #nav {
-          width: 640px;
-          height: 100px;
-          text-align: center;
-          margin: 0 auto;
-          padding: 0;
+        #app>#bb{
+            background-color: rgb(201, 140, 97);
+            padding: 8px;
+            color: white;
         }
-    
-        #container > #nav > #eng{
-          overflow: hidden;
-          float: left;
-          margin-top: 13px;
+        #app>h1{
+            text-align: center;
+            font-size: 40px;
+            color: brown;
+            margin: 30px;
         }
-    
-        #container > #nav > #eng > a {
-          width: 40px;
-          height: 40px;
-          position: absolute;
+        ul{
+            list-style-type: none;
+            height: 220px;
         }
-    
-        #container > #nav > #button{
-          float: right;
-          overflow: hidden;
-          width: 40px;
-          height: 40px;
-          margin-top: 10px;
-          
-        }   
-      </style>    
+        input[type="text"],input[type="password"]{
+            width: 300px;
+            height: 40px;
+            margin: 10px 50px;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        input[type="submit"]{
+            width: 300px;
+            height: 45px;
+            margin: 10px 50px;
+            background-color: rgba(104, 65, 49, 0.945);
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
-  <div id="container">
-    <div id="nav">
-      <a href="index.html"><img src="" alt=""></a>
-      <div id="eng">
-        <a href=""><img src="" alt=""></a>
-      </div>
-      <div id="button">
-        <button style=";">
-          <span><img src="images/quickmenu.png" alt=""></span>
-        </button>
-      </div>
+    <div id="app">
+        <img src="images/logo.png" alt="" style="width: 120px;
+                                              margin: 5px 100px;">
+        <img src="images/메뉴버튼.svg" alt="" style="float: right;
+                                                  margin-top: 13px;">
+        <img src="images/언어변경버튼.svg" alt="" style="float: left;
+                                                      margin-top: 13px;">
+     <div id="aa">
+        <h1>MEMBER</h1>
+     </div>
+     <div id="bb">
+        <h4>로그인</h4>
+     </div>
+     <h1>로그인</h1>
+     <form action="" method="post">
+       <fieldset>
+        <p style="font-size: 22px; text-align: center;">MEMBER'S LOGIN</p>
+        <ul>
+        <li><input type="text" name="" id="" placeholder="아이디"></li>
+        <li><input type="password" name="" id="" placeholder="비밀번호"></li>
+        <li><input type="submit" value="로그인"></li>
+        </ul>
+      </fieldset>
+     </form>
+     
     </div>
-  </div>
 </body>
+</html>
