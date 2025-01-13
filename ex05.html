@@ -5,16 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        textarea{
-            font-size: 22px;
-            background-color: rgb(240, 240, 240);
-            height: 150px;
-            width: 100%;
-            resize: vertical;
+            @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        *{
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            font-family: GmarketSansMedium;}
+        li{list-style-type: none;}
+        a{text-decoration: none;
+          color: rgb(30, 30, 30);}
+        img{border: 0;}
+        #header{
+            width: 960px;
+            margin: 0 auto;
+            background-color: rgb(236, 236, 236);
+            position: relative;
+            height: 120px;
+        }
+        #header>#main-title{
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            cursor: pointer;
+        }
+        #header>#sub-title{
+            position: absolute;
+            bottom: 0;
+            left: 60px;
+            cursor: pointer;;
+        }
+        #header>#global-nav{
+            position: absolute;
+            right: 0;
+            top: 5px;
+        }
+        #header>#global-nav>ul>li{
+            float: left;
+        }
+        #header>#global-nav>ul>li>a{
+            display: block;
+            padding: 10px 30px;
+            border: 1px solid black;
+        }
+        #header>#global-nav>ul>li>a:hover{
+            background-color: rgb(100, 250, 100);
+            color: rgb(236, 236, 236);
+        }
+        #header>#global-nav>ul>li:first-child>a{
+            border-radius: 5px 0 0 5px;
+        }
+        #header>#global-nav>ul>li:last-child>a{
+            border-radius: 0 5px 5px 0;
         }
     </style>
 </head>
 <body>
-    <textarea name="" id=""></textarea>
+    <div id="header">
+        <div id="main-title">
+        <h1>Main-title</h1>
+    </div>
+    <div id="sub-title">
+        <h3>HTML5+CSS3</h3>
+    </div>
+    <div id="global-nav">
+        <ul>
+            <li><a href="">AAA</a></li>
+            <li><a href="">BBB</a></li>
+            <li><a href="">CCC</a></li>
+            <li><a href="">DDD</a></li>
+        </ul>
+    </div>
+    <div id="main-nav">
+        <ul>
+            <li><a href="">Html</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JAVASCRIPT</a></li>
+            <li><a href="">NODE</a></li>
+            <li><a href="">REACT</a></li>
+            <li><a href="">DB</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="section">
+        <h1>Section</h1>
+    </div>
+    <div id="aside">
+        <h1>Aside</h1>
+    </div>
+    <div id="footer">
+        <h1>Footer</h1>
+    </div>
 </body>
 </html>

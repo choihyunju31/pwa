@@ -5,42 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container{
-            height: 300px;
-            position: relative;
-            background-color: rgb(236, 236, 236);}
-        #container>div{width: 100px; height: 100px;}
-        #container>#section1{
-            position: absolute;
-            left: 150px;
-            bottom: 0;
-            background-color: rgb(230, 100, 230); overflow: hidden;}
-        #container>#section2{
-            position:absolute;
-            right: 30px;
-            bottom: 30px;
-            background-color: rgb(100, 100, 230);}
-        #container>#section3{
-            position: absolute;
-            /* top: 0;
-            right: 100px; */
-            right: 0;
-            bottom: 0;
-            background-color: rgb(230, 100, 100);}
+        @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'GmarketSansMedium';
+}
+        .aa{
+            background-color: rgb(250, 100, 200);
+            margin: 10px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .aa:hover{
+            transform: rotate(15deg);
+            text-decoration: line-through;
+        }
+        #bb{
+            color: rgb(248, 236, 248);
+        }
+        a{
+            color: blue !important;
+            text-decoration: none;}
+        a:hover{
+            text-decoration: underline; 
+            background-color: aquamarine;
+            border-radius: 5px;}
+        a:visited{color: black;}
+        .aa{
+            /* font-size: 3em */
+            font-size: 48px; 
+        }
     </style>
 </head>
 <body>
-    <h1>POSITION</h1>
-    <div id="container">
-        <div id="section1">
-            <h1>Heading</h1>
-        </div>
-        <div id="section2">
-            <h1>Heading</h1>
-        </div>
-        <div id="section3">
-            <h1>Heading</h1>
-        </div>
+    <h1>Heading</h1>
+    <a href="">링크</a>
+    <a href="ex01.html">링크</a>
+    <div class="aa" id="bb">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nulla, assumenda iusto dolorem beatae voluptates, accusamus obcaecati amet, quas expedita dolorum repellendus. Odio voluptatum deleniti deserunt suscipit adipisci, voluptas ipsa!
+    </div>
+    <div class="aa" id="bb">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nulla, assumenda iusto dolorem beatae voluptates, accusamus obcaecati amet, quas expedita dolorum repellendus. Odio voluptatum deleniti deserunt suscipit adipisci, voluptas ipsa!
+    </div>
+    <div class="aa" id="bb">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nulla, assumenda iusto dolorem beatae voluptates, accusamus obcaecati amet, quas expedita dolorum repellendus. Odio voluptatum deleniti deserunt suscipit adipisci, voluptas ipsa!
     </div>
 </body>
 </html>
